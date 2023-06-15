@@ -15,11 +15,16 @@
         <!-- Add your extensions here -->
         <postStartupActivity implementation="Plugin"/>
 
-        <!--
-        <annotator
-                language="JAVA"
-                implementationClass="Plugin"/>
-        -->
+
+<!--        <annotator-->
+<!--                language="JAVA"-->
+<!--                implementationClass="Plugin"/>-->
+<!--        <toolWindowFactory id="myToolWindow" class="com.MyToolWindowFactory">-->
+<!--            <toolWindow anchor="right" anchorBefore="TODO" factoryId="default" secondary="false" type="unpinned" />-->
+<!--        </toolWindowFactory>-->
+
+        <toolWindow id="Pitest Runner Window" secondary="true" icon="AllIcons.Toolwindows.WebToolWindow" anchor="right"
+                    factoryClass="MyToolWindowFactory"/>
 
         <codeInsight.lineMarkerProvider
                 language="JAVA"
